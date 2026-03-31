@@ -2,3 +2,4 @@
    sudo apt-get install -y bat
    查看进程忽略grep
    ps aux| grep nginx|grep -v grep
+   
