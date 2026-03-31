@@ -5,3 +5,4 @@ java工具类
 ```java
 password = DigestUtils.md5DigestAsHex(password.getBytes());
 ```
+![](assets/MD5加密/file-20260331085208727.png)
