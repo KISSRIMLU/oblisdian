@@ -40,3 +40,11 @@ sudo docker run -d -p 80:80 -v /home/ricardo/nginx/html/sky:/usr/share/nginx/htm
 
 查看容器挂载到宿主机的目录
 sudo docker volume inspect nginx_html
+
+运行：run
+后台：-d 
+端口：-p 100（宿主机）：80 
+挂载卷： -v /home/ricardo/nginx/html/sky:/usr/share/nginx/html 
+容器命名： --name my_nginx2
+容器类型：nginx
+sudo docker run -d -p 100:80 -v /home/ricardo/nginx/html/sky:/usr/share/nginx/html --name my_nginx2 nginx
