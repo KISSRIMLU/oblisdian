@@ -36,3 +36,7 @@ sudo docker run -d -p 80:80 -v /home/ricardo/nginx/html/sky:/usr/share/nginx/htm
    ## 清理                                                                               
    docker system prune       # 清理无用的镜像、容器、网络                                
    docker system df          # 查看磁盘占用 
+
+
+查看容器挂载到宿主机的目录
+sudo docker volume inspect nginx_html
