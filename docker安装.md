@@ -48,3 +48,9 @@ sudo docker volume inspect nginx_html
 容器命名： --name my_nginx2
 容器类型：nginx
 sudo docker run -d -p 100:80 -v /home/ricardo/nginx/html/sky:/usr/share/nginx/html --name my_nginx2 nginx
+
+
+sudo docker run -d -p 100:80 
+-v /home/ricardo/nginx/html/sky:/usr/share/nginx/html 
+-v /home/ricardo/nginx/conf/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+--name my_nginx2 nginx
